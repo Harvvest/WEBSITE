@@ -19,8 +19,8 @@
   --glow-strong: 0 0 40px rgba(0, 255, 106, 0.5);
   --radius: 14px;
   --radius-lg: 20px;
-  --font-head: 'Space Grotesk', sans-serif;
-  --font-body: 'Inter', sans-serif;
+  --font-head: 'Sora', sans-serif;
+  --font-body: 'Manrope', sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
 }
 
@@ -1275,4 +1275,46 @@ img { max-width: 100%; }
 }
 @media (max-width: 600px) {
   .footer-main { grid-template-columns: 1fr; }
+}
+
+
+/* PREMIUM TYPOGRAPHY + SUBTLE FLOATING MOTION */
+body { font-weight: 500; letter-spacing: -0.01em; }
+.hero-headline, .section-title, .course-title, .cta-headline { letter-spacing: -0.035em; }
+.hero-headline { font-weight: 800; }
+
+@keyframes premium-float {
+  0%, 100% { translate: 0 0; }
+  50% { translate: 0 -6px; }
+}
+@keyframes premium-float-soft {
+  0%, 100% { translate: 0 0; }
+  50% { translate: 0 -3px; }
+}
+.hero-chart, .power-claim, .stat-item, .course-card, .feature-card,
+.faculty-card, .testimonial-card, .cta-card, .community-card, .enquiry-form-card {
+  will-change: translate;
+  animation: premium-float 6s ease-in-out infinite;
+}
+.hero-badge, .platinum-box, .cert-badge {
+  animation: premium-float-soft 4.8s ease-in-out infinite;
+}
+.power-claim:nth-child(3n + 1), .course-card:nth-child(2n), .feature-card:nth-child(2n),
+.faculty-card:nth-child(2n), .testimonial-card:nth-child(2n) { animation-delay: -1.4s; }
+.power-claim:nth-child(3n), .course-card:nth-child(3n), .feature-card:nth-child(3n),
+.faculty-card:nth-child(3n), .testimonial-card:nth-child(3n) { animation-delay: -2.8s; }
+
+@media (max-width: 768px) {
+  .hero-chart, .power-claim, .stat-item, .course-card, .feature-card,
+  .faculty-card, .testimonial-card, .cta-card, .community-card, .enquiry-form-card {
+    animation-duration: 7.5s;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-chart, .power-claim, .stat-item, .course-card, .feature-card,
+  .faculty-card, .testimonial-card, .cta-card, .community-card, .enquiry-form-card,
+  .hero-badge, .platinum-box, .cert-badge {
+    animation: none !important;
+    translate: none !important;
+  }
 }
