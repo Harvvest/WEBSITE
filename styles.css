@@ -1561,3 +1561,146 @@ section{position:relative}
   .why-section::before{width:calc(100% - 28px);height:220px;border-radius:14px}
   .cta-card{padding:38px 24px!important}
 }
+
+/* REFERENCE MOCKUP MATCH — 2026-10-07 */
+/* Match the supplied HARVVEST reference: same visual language, no location block added. */
+:root{
+  --ref-bg:#03100c;--ref-deep:#061611;--ref-panel:#0b1c16;
+  --ref-green:#0c4b38;--ref-gold:#f0c66a;--ref-cream:#f3efe5;
+}
+body{background:var(--ref-bg)!important}
+.ticker-bar{display:none!important}
+.navbar{top:0!important;height:76px!important;background:rgba(3,16,12,.96)!important}
+.nav-container{height:76px!important}
+.logo-text{font-family:Georgia,"Times New Roman",serif!important;font-size:26px!important;letter-spacing:.06em!important}
+.nav-links{gap:34px!important}
+.nav-links a{font-size:13px!important;color:#f1eee7!important}
+.nav-cta{background:var(--ref-gold)!important;color:#102016!important;border-color:var(--ref-gold)!important;padding:12px 18px!important}
+
+/* HERO — cinematic split exactly in the spirit of the reference */
+.hero{min-height:620px!important;padding:76px 0 0!important;background:#03100c!important}
+.hero::after{
+  width:60%!important;left:auto!important;right:0!important;top:76px!important;height:544px!important;
+  background:
+    linear-gradient(90deg,#03100c 0%,rgba(3,16,12,.76) 18%,rgba(3,16,12,.08) 58%),
+    linear-gradient(0deg,rgba(3,16,12,.35),transparent 50%),
+    url("https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?auto=format&fit=crop&w=1600&q=88") center/cover no-repeat!important;
+  opacity:1!important
+}
+.hero-bg,.grain-overlay,.scroll-indicator{display:none!important}
+.hero-container{min-height:544px!important;display:block!important;padding-top:70px!important;padding-bottom:58px!important}
+.hero-content{position:relative;z-index:4;max-width:660px!important}
+.hero-badge{
+  border:0!important;background:transparent!important;padding:0!important;margin-bottom:22px!important;
+  color:#d9d5ca!important;text-transform:uppercase;letter-spacing:.22em;font-size:11px!important
+}
+.hero-badge .badge-dot{display:none!important}
+.hero-headline{
+  font-family:Georgia,"Times New Roman",serif!important;font-size:clamp(50px,5.5vw,76px)!important;
+  line-height:.98!important;letter-spacing:-.035em!important;color:#f7f3e9!important;margin-bottom:22px!important
+}
+.hero-headline .green-text{color:var(--ref-gold)!important}
+.hero-sub{font-size:17px!important;line-height:1.55!important;color:#e4e1da!important;max-width:610px!important}
+.hero-ctas{margin-top:28px!important}
+.hero-ctas .btn-primary{background:var(--ref-gold)!important;color:#102016!important;border-color:var(--ref-gold)!important}
+.hero-ctas .btn-outline-blue{border-color:rgba(255,255,255,.6)!important;color:white!important;background:rgba(3,16,12,.34)!important}
+.hero-chart{display:none!important}
+.social-proof{color:#e7e3da!important}
+
+/* PROOF BAND */
+.stats-bar{padding:0!important;background:linear-gradient(90deg,#063426,#0a4b38,#063426)!important;border:0!important}
+.stats-grid{min-height:96px!important}
+.stat-item{padding:18px 34px!important}
+.stat-number{font-family:Georgia,"Times New Roman",serif!important;color:#f5f1e8!important;font-size:31px!important}
+.stat-label{color:#e5eee9!important;text-transform:none!important;letter-spacing:0!important;font-size:12px!important}
+.stat-divider{background:rgba(255,255,255,.18)!important;height:46px!important}
+
+/* Remove the old claim strip so the page follows the cleaner reference hierarchy */
+.power-banner{display:none!important}
+
+/* LEARNING / COURSES */
+.courses-section{padding:58px 0 72px!important;background:#03100c!important}
+.courses-section .section-header{text-align:left!important;margin:0 0 32px!important;max-width:none!important}
+.courses-section .section-title{
+  font-family:Georgia,"Times New Roman",serif!important;font-size:42px!important;color:#f6f2e8!important
+}
+.courses-section .section-title .green-text{color:var(--ref-gold)!important}
+.courses-section .section-sub{font-size:15px!important;margin-top:8px!important;color:#d0d8d3!important}
+.course-card.flagship{
+  background:linear-gradient(90deg,rgba(7,24,18,.97),rgba(7,24,18,.88)),url("https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=1400&q=86") right/cover no-repeat!important;
+  min-height:auto!important
+}
+.course-card,.feature-card,.faculty-card,.testimonial-card,.community-card,.enquiry-form-card{
+  background:linear-gradient(180deg,#0b1d17,#071611)!important;border:1px solid rgba(224,235,228,.2)!important;border-radius:8px!important
+}
+.course-ribbon{background:var(--ref-gold)!important;color:#132019!important}
+.course-badge{font-size:10px!important}
+.course-title{font-family:Georgia,"Times New Roman",serif!important}
+.btn-primary{background:var(--ref-gold)!important;color:#102016!important;border-color:var(--ref-gold)!important}
+.btn-outline-blue,.btn-outline-green{border-color:rgba(255,255,255,.45)!important;color:#f5f1e8!important}
+
+/* WHY HARVVEST — photo left / cream information right, like supplied design */
+.why-section{
+  padding:0!important;background:var(--ref-cream)!important;color:#102016!important;
+  display:grid!important;grid-template-columns:1fr 1.05fr!important;min-height:430px
+}
+.why-section::before{
+  width:100%!important;height:100%!important;min-height:430px!important;margin:0!important;border:0!important;border-radius:0!important;
+  background:
+    linear-gradient(rgba(3,16,12,.08),rgba(3,16,12,.08)),
+    url("https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1400&q=88") center/cover no-repeat!important;
+  box-shadow:none!important
+}
+.why-section>.container{width:100%!important;max-width:720px!important;margin:0!important;padding:58px 54px!important;align-self:center}
+.why-section .section-header{text-align:left!important;margin:0 0 28px!important}
+.why-section .section-title{
+  font-family:Georgia,"Times New Roman",serif!important;color:#102016!important;font-size:42px!important
+}
+.why-section .green-text{color:#0a513b!important}
+.why-section .section-sub,.why-section .feature-card p{color:#46554d!important}
+.features-grid{grid-template-columns:1fr 1fr!important;gap:10px 18px!important}
+.feature-card{
+  min-height:auto!important;padding:14px 0!important;background:transparent!important;border:0!important;box-shadow:none!important
+}
+.feature-card:hover{transform:none!important;box-shadow:none!important}
+.feature-icon{font-size:20px!important;margin-bottom:7px!important}
+.feature-card h3{color:#102016!important;font-family:var(--font-body)!important;font-size:14px!important;margin-bottom:4px!important}
+
+/* Remaining sections continue the same restrained palette */
+.about-section{background:#f3efe5!important;padding:86px 0!important}
+.faculty-section{background:#03100c!important}
+.testimonials-section{background:#061611!important}
+.community-section{background:#03100c!important}
+.contact-section{background:#061611!important}
+.faculty-section .section-title,.testimonials-section .section-title,.community-section .section-title,.contact-section .section-title{
+  font-family:Georgia,"Times New Roman",serif!important
+}
+
+/* Closing growth visual, matching reference */
+.cta-banner{padding:0!important;background:#03100c!important}
+.cta-card{
+  border-radius:0!important;border:0!important;min-height:360px!important;padding:70px 7vw!important;
+  background:
+    linear-gradient(90deg,rgba(3,16,12,.95) 0%,rgba(3,16,12,.78) 55%,rgba(3,16,12,.12) 100%),
+    url("https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=1600&q=88") center/cover no-repeat!important
+}
+.cta-headline{font-family:Georgia,"Times New Roman",serif!important;color:#f7f3e9!important}
+.footer{background:#020b08!important}
+
+@media(max-width:900px){
+  .why-section{display:block!important}
+  .why-section::before{display:block!important;height:280px!important;min-height:280px!important}
+  .why-section>.container{max-width:none!important;padding:48px 28px!important}
+  .hero::after{width:100%!important;opacity:.38!important}
+  .hero-container{padding-top:60px!important}
+}
+@media(max-width:600px){
+  .navbar{height:66px!important}.nav-container{height:66px!important}
+  .hero{padding-top:66px!important;min-height:610px!important}
+  .hero::after{top:66px!important;height:544px!important}
+  .hero-headline{font-size:48px!important}
+  .stats-grid{grid-template-columns:1fr 1fr!important;padding:12px 0!important}
+  .stat-divider{display:none!important}
+  .features-grid{grid-template-columns:1fr!important}
+  .why-section>.container{padding:42px 22px!important}
+}
