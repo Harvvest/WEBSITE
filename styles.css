@@ -1318,3 +1318,124 @@ body { font-weight: 500; letter-spacing: -0.01em; }
     translate: none !important;
   }
 }
+
+/* HARVVEST 2026 EDUCATION-FIRST THEME */
+:root{
+  --bg:#07110d;
+  --surface:#0d1813;
+  --surface-2:#101e17;
+  --green:#b8e986;
+  --blue:#8fb9a8;
+  --gold:#d8c38d;
+  --text:#f3f0e8;
+  --muted:#9ca9a1;
+  --border:rgba(243,240,232,.11);
+  --glow:0 18px 60px rgba(0,0,0,.22);
+  --radius-lg:18px;
+}
+html{scroll-behavior:smooth}
+body{
+  background:
+    radial-gradient(circle at 82% 8%,rgba(184,233,134,.07),transparent 28%),
+    linear-gradient(180deg,#07110d 0%,#09140f 42%,#07110d 100%);
+  color:var(--text);
+  font-family:var(--font-body);
+  font-weight:500;
+  cursor:auto!important;
+}
+.cursor,.cursor-trail{display:none!important}
+*{cursor:auto}
+a,button,.btn-primary,.btn-outline-blue,.btn-outline-green{cursor:pointer}
+.ticker-bar{background:#0a1510;border-bottom:1px solid var(--border);opacity:.88}
+.tick.up,.tick.down,.pct{color:#a9c99a!important}
+.navbar{
+  background:rgba(7,17,13,.88)!important;
+  border-bottom:1px solid var(--border)!important;
+  backdrop-filter:blur(18px);
+  -webkit-backdrop-filter:blur(18px);
+}
+.logo-text{letter-spacing:.12em;color:#f4f0e7!important}
+.logo-vv,.green-text{color:var(--green)!important}
+.nav-links a{color:#c8d0ca!important;font-weight:600}
+.nav-links a:hover{color:#fff!important}
+.hero{min-height:88vh;background:transparent!important}
+.hero-bg,.grain-overlay{opacity:.28}
+.mesh-blob{filter:blur(110px)!important;opacity:.13!important;animation:none!important}
+.hero-container{gap:72px}
+.hero-badge{
+  color:#d8e5d8!important;background:rgba(184,233,134,.07)!important;
+  border:1px solid rgba(184,233,134,.18)!important;box-shadow:none!important
+}
+.badge-dot{background:var(--green)!important;box-shadow:none!important}
+.hero-headline{
+  font-family:var(--font-head);font-weight:700!important;letter-spacing:-.055em!important;
+  line-height:.98!important;color:#f5f1e8!important
+}
+.hero-sub{color:#aab5ae!important;max-width:650px;line-height:1.75!important}
+.btn-primary{
+  background:var(--green)!important;color:#102015!important;border:1px solid var(--green)!important;
+  border-radius:10px!important;box-shadow:none!important;font-weight:800!important
+}
+.btn-primary:hover{transform:translateY(-2px)!important;background:#c8f29c!important;box-shadow:0 12px 30px rgba(0,0,0,.2)!important}
+.btn-outline-blue,.btn-outline-green{
+  color:#e8ede8!important;border:1px solid rgba(232,237,232,.25)!important;
+  background:rgba(255,255,255,.025)!important;border-radius:10px!important
+}
+.btn-outline-blue:hover,.btn-outline-green:hover{border-color:var(--green)!important;color:var(--green)!important;background:rgba(184,233,134,.05)!important}
+.social-proof,.stars{color:#b9c4bd!important}
+.hero-chart{
+  background:#0b1711!important;border:1px solid rgba(184,233,134,.14)!important;
+  border-radius:18px!important;box-shadow:0 30px 80px rgba(0,0,0,.32)!important
+}
+.scroll-indicator svg{stroke:var(--green)!important}
+.power-banner{background:#efeade!important;color:#142019!important;border:0!important}
+.power-label{color:#5d6a62!important}
+.power-title{color:#132019!important}
+.power-icon{filter:grayscale(1);opacity:.75}
+.power-divider{background:rgba(20,32,25,.15)!important}
+.stats-bar{background:#09140f!important;border-color:var(--border)!important}
+.stat-number{color:var(--green)!important;font-family:var(--font-head)!important}
+.stat-label{color:#9eaaa3!important}
+.courses-section,.about-section,.testimonials-section,.contact-section{background:transparent!important}
+.why-section,.faculty-section,.community-section{background:#0a1610!important}
+.section-title{font-weight:700!important;color:#f2eee5!important}
+.section-sub{color:#9eaaa3!important}
+.course-card,.feature-card,.faculty-card,.testimonial-card,.community-card,.enquiry-form-card,.cta-card{
+  background:#0d1913!important;border:1px solid var(--border)!important;
+  box-shadow:none!important;border-radius:18px!important
+}
+.course-card:hover,.feature-card:hover,.faculty-card:hover,.testimonial-card:hover{
+  border-color:rgba(184,233,134,.35)!important;box-shadow:0 18px 50px rgba(0,0,0,.22)!important;
+  transform:translateY(-4px)!important
+}
+.course-ribbon{
+  background:#e8e1d1!important;color:#152119!important;letter-spacing:.08em!important
+}
+.course-badge,.tag,.batch,.meta-item,.cert-badge,.platinum-box{
+  border-radius:7px!important;box-shadow:none!important
+}
+.badge-green,.badge-free,.tag.green{color:#b8e986!important;background:rgba(184,233,134,.07)!important;border-color:rgba(184,233,134,.2)!important}
+.badge-blue,.tag.blue,.meta-item{color:#a8c7bb!important;background:rgba(143,185,168,.07)!important;border-color:rgba(143,185,168,.18)!important}
+.badge-gold,.cert-badge,.platinum-box{color:#d8c38d!important;background:rgba(216,195,141,.07)!important;border-color:rgba(216,195,141,.2)!important}
+.course-title,.feature-card h3,.faculty-name,.form-title{color:#f2eee5!important}
+.course-subtitle,.feature-card p,.faculty-quote,.testimonial-text,.free-desc,.about-para{color:#9ca9a1!important}
+.course-price-highlight,.faculty-title,.student-name,.info-link{color:var(--green)!important}
+.timeline::before{background:linear-gradient(to bottom,var(--green),transparent)!important}
+.tl-dot{border-color:var(--green)!important;background:#07110d!important}
+.cta-card::before{display:none!important}
+.cta-card{border:1px solid rgba(184,233,134,.22)!important;background:linear-gradient(135deg,#101e17,#0a1510)!important}
+.form-group input,.form-group select,.form-group textarea{
+  background:#09140f!important;border-color:var(--border)!important;color:#f2eee5!important;border-radius:9px!important
+}
+.form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:var(--green)!important;box-shadow:0 0 0 3px rgba(184,233,134,.08)!important}
+.footer{background:#050c08!important;border-top:1px solid var(--border)}
+.footer-top-line{height:1px!important;background:linear-gradient(90deg,transparent,rgba(184,233,134,.45),transparent)!important}
+.whatsapp-float{box-shadow:0 12px 32px rgba(0,0,0,.3)!important}
+.hero-chart,.power-claim,.stat-item,.course-card,.feature-card,.faculty-card,.testimonial-card,.cta-card,.community-card,.enquiry-form-card,.hero-badge,.platinum-box,.cert-badge{
+  animation:none!important;translate:none!important
+}
+@media(max-width:768px){
+  .hero{min-height:auto;padding-top:72px}
+  .hero-container{gap:38px}
+  .hero-headline{letter-spacing:-.045em!important}
+}
