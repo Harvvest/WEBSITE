@@ -1439,3 +1439,125 @@ a,button,.btn-primary,.btn-outline-blue,.btn-outline-green{cursor:pointer}
   .hero-container{gap:38px}
   .hero-headline{letter-spacing:-.045em!important}
 }
+
+/* HARVVEST STRUCTURE + PHOTOGRAPHY PASS */
+/* One visual system: editorial finance + practical classroom */
+.container,.nav-container,.hero-container{max-width:1180px!important}
+section{position:relative}
+.courses-section,.why-section,.about-section,.faculty-section,.testimonials-section,.contact-section{padding-top:112px!important;padding-bottom:112px!important}
+.section-header{max-width:720px;margin:0 auto 52px;text-align:center}
+.section-title{font-size:clamp(34px,4.5vw,58px)!important;line-height:1.06!important}
+.section-sub{font-size:16px!important;line-height:1.75!important;margin-top:14px!important}
+
+/* Hero becomes a premium editorial trading desk visual without breaking the chart JS */
+.hero{overflow:hidden}
+.hero::after{
+  content:"";position:absolute;right:0;top:0;width:48%;height:100%;z-index:0;
+  background:
+    linear-gradient(90deg,#07110d 0%,rgba(7,17,13,.55) 20%,rgba(7,17,13,.12) 70%),
+    linear-gradient(0deg,rgba(7,17,13,.52),transparent 55%),
+    url("https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?auto=format&fit=crop&w=1400&q=85") center/cover no-repeat;
+  opacity:.8
+}
+.hero-container{position:relative;z-index:2;grid-template-columns:1.08fr .92fr!important}
+.hero-content{max-width:660px}
+.hero-chart{position:relative;background:rgba(7,17,13,.78)!important;backdrop-filter:blur(8px)}
+.hero-chart::before{
+  content:"LIVE MARKET PRACTICE";position:absolute;top:14px;left:16px;z-index:3;
+  font-family:var(--font-mono);font-size:10px;letter-spacing:.14em;color:#dfe9df;
+  background:rgba(7,17,13,.78);border:1px solid rgba(184,233,134,.2);padding:7px 10px;border-radius:6px
+}
+.hero-headline{font-size:clamp(48px,6.1vw,82px)!important}
+.hero-sub{font-size:17px!important}
+.hero-ctas{gap:12px!important}
+.social-proof{margin-top:28px!important}
+
+/* Stats read as a single institutional proof band */
+.stats-bar{padding:34px 0!important;border-top:1px solid var(--border)!important}
+.stat-item{padding:16px 24px!important}
+.stat-number{font-size:clamp(32px,4vw,48px)!important}
+.stat-label{letter-spacing:.08em!important}
+
+/* Course hierarchy */
+.course-card.flagship{
+  background:
+    linear-gradient(90deg,rgba(13,25,19,.98) 0%,rgba(13,25,19,.94) 58%,rgba(13,25,19,.25) 100%),
+    url("https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=1400&q=85") right center/55% 100% no-repeat!important;
+  min-height:560px;display:flex;align-items:stretch
+}
+.course-card.flagship .course-inner{width:68%;display:flex;align-items:center}
+.course-card.flagship .course-left{max-width:700px}
+.courses-grid{align-items:stretch!important}
+.course-card:not(.flagship){display:flex;flex-direction:column}
+.course-card:not(.flagship) .btn-primary,.course-card:not(.flagship) .btn-outline-blue{margin-top:auto!important;align-self:flex-start}
+.course-title{font-size:clamp(22px,2.5vw,31px)!important}
+.course-checklist{gap:11px!important}
+.check-item{line-height:1.55!important}
+
+/* Why section gets a real learning environment photo */
+.why-section{overflow:hidden}
+.why-section::before{
+  content:"";display:block;width:min(1180px,calc(100% - 40px));height:360px;margin:0 auto 64px;
+  border-radius:20px;border:1px solid var(--border);
+  background:
+    linear-gradient(90deg,rgba(7,17,13,.18),rgba(7,17,13,.02)),
+    url("https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1600&q=85") center/cover no-repeat;
+  box-shadow:0 28px 70px rgba(0,0,0,.22)
+}
+.features-grid{gap:18px!important}
+.feature-card{padding:28px!important;min-height:205px}
+.feature-icon{filter:grayscale(.25);font-size:30px!important}
+
+/* About is lighter editorial section for rhythm and readability */
+.about-section{
+  background:#eee9dd!important;color:#142019!important;
+  border-top:1px solid rgba(255,255,255,.04);border-bottom:1px solid rgba(0,0,0,.08)
+}
+.about-section .section-title,.about-section .about-final,.about-section .tl-event{color:#142019!important}
+.about-section .about-para,.about-section .section-sub{color:#5f6a63!important}
+.about-section .timeline::before{background:linear-gradient(to bottom,#426b50,rgba(66,107,80,.12))!important}
+.about-section .tl-dot{background:#eee9dd!important;border-color:#426b50!important}
+.about-section .tl-year{color:#426b50!important}
+
+/* Faculty and testimonials: restrained, equal cards */
+.faculty-grid,.testimonials-grid{gap:18px!important}
+.faculty-card,.testimonial-card{padding:32px!important}
+.faculty-photo{width:88px!important;height:88px!important;background:#13241a!important}
+.testimonial-card{text-align:left!important}
+.testimonial-card .student-photo{margin-left:0!important}
+.testimonial-card .gold{letter-spacing:.12em!important}
+
+/* CTA has growth/harvest visual */
+.cta-banner{padding:96px 0!important}
+.cta-card{
+  text-align:left!important;padding:72px!important;
+  background:
+    linear-gradient(90deg,rgba(9,20,15,.98) 0%,rgba(9,20,15,.88) 55%,rgba(9,20,15,.2) 100%),
+    url("https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=1400&q=85") right center/cover no-repeat!important
+}
+.cta-headline,.cta-sub{max-width:650px!important;margin-left:0!important}
+.cta-headline{font-size:clamp(34px,4.6vw,58px)!important}
+
+/* Contact feels like final conversion panel */
+.contact-grid{gap:72px!important}
+.enquiry-form-card{padding:44px!important}
+.info-block{padding-bottom:22px;border-bottom:1px solid var(--border)}
+.footer-main{gap:56px!important}
+
+/* Clean responsive hierarchy */
+@media(max-width:900px){
+  .hero::after{width:100%;opacity:.24}
+  .hero-container{grid-template-columns:1fr!important}
+  .hero-chart{max-width:650px;width:100%}
+  .course-card.flagship{background:#0d1913!important;min-height:auto}
+  .course-card.flagship .course-inner{width:100%}
+  .why-section::before{height:280px;margin-bottom:46px}
+  .cta-card{padding:48px 32px!important;background:linear-gradient(90deg,rgba(9,20,15,.96),rgba(9,20,15,.8)),url("https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=1000&q=80") center/cover no-repeat!important}
+}
+@media(max-width:600px){
+  .courses-section,.why-section,.about-section,.faculty-section,.testimonials-section,.contact-section{padding-top:78px!important;padding-bottom:78px!important}
+  .section-header{text-align:left;margin-bottom:36px}
+  .hero-headline{font-size:clamp(42px,13vw,62px)!important}
+  .why-section::before{width:calc(100% - 28px);height:220px;border-radius:14px}
+  .cta-card{padding:38px 24px!important}
+}
