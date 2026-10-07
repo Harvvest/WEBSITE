@@ -1878,3 +1878,62 @@ body{background:radial-gradient(circle at 84% 18%,rgba(35,103,75,.13),transparen
  .why-section>.container{padding:0 18px!important}
  .why-section .feature-card{padding:18px 8px!important}
 }
+
+/* REFERENCE PHOTO PLACEMENT */
+/* Photos only where the latest reference design visually needs them. */
+
+/* Course cards: chart / discipline / live-market photography */
+.course-card{overflow:hidden!important;position:relative!important}
+.course-card:not(.flagship)::before{
+  content:"";display:block;width:100%;height:185px;margin:-1px -1px 24px;width:calc(100% + 2px);
+  background-position:center;background-size:cover;background-repeat:no-repeat;
+  border-bottom:1px solid rgba(118,153,136,.24)
+}
+.courses-grid .course-card:nth-child(1)::before{
+  background-image:
+    linear-gradient(0deg,rgba(7,17,15,.18),rgba(7,17,15,.02)),
+    url("https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=1100&q=86")
+}
+.courses-grid .course-card:nth-child(2)::before{
+  background-image:
+    linear-gradient(0deg,rgba(7,17,15,.22),rgba(7,17,15,.02)),
+    url("https://images.unsplash.com/photo-1456324504439-367cee3b3c32?auto=format&fit=crop&w=1100&q=86")
+}
+.courses-grid .course-card:nth-child(3)::before{
+  background-image:
+    linear-gradient(0deg,rgba(7,17,15,.18),rgba(7,17,15,.02)),
+    url("https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?auto=format&fit=crop&w=1100&q=86")
+}
+
+/* Flagship card gets a subtle real-market image on the right, content stays readable. */
+.course-card.flagship{
+  background:
+    linear-gradient(90deg,#0a1814 0%,#0a1814 58%,rgba(10,24,20,.84) 72%,rgba(10,24,20,.34) 100%),
+    url("https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=1500&q=86") right center/48% 100% no-repeat!important
+}
+
+/* About: small editorial trading-desk image, not a random full-background photo. */
+.about-text::before{
+  content:"";display:block;height:230px;border:1px solid rgba(118,153,136,.24);border-radius:10px;margin-bottom:28px;
+  background:
+    linear-gradient(0deg,rgba(7,17,15,.18),rgba(7,17,15,.02)),
+    url("https://images.unsplash.com/photo-1535320903710-d993d3d77d29?auto=format&fit=crop&w=1200&q=86") center/cover no-repeat
+}
+
+/* CTA: disciplined learning desk visual on the right, same emerald palette. */
+.cta-card{
+  background:
+    linear-gradient(90deg,#0a1814 0%,#0a1814 58%,rgba(10,24,20,.75) 78%,rgba(10,24,20,.2) 100%),
+    url("https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1400&q=86") right center/48% 100% no-repeat!important
+}
+.cta-card>*{position:relative;z-index:1}
+.cta-headline,.cta-sub{max-width:650px!important}
+
+/* Keep faculty honest: no stock-person photos pretending to be actual faculty. */
+.faculty-photo{background:#0d211a!important;border:1px solid rgba(83,213,140,.25)!important}
+
+@media(max-width:900px){
+ .course-card.flagship{background:#0a1814!important}
+ .cta-card{background:linear-gradient(rgba(10,24,20,.91),rgba(10,24,20,.91)),url("https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1000&q=82") center/cover no-repeat!important}
+ .course-card:not(.flagship)::before{height:160px}
+}
