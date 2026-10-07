@@ -1704,3 +1704,67 @@ body{background:var(--ref-bg)!important}
   .features-grid{grid-template-columns:1fr!important}
   .why-section>.container{padding:42px 22px!important}
 }
+
+/* STRICT REFERENCE FEATURE MATCH */
+/* Supplied screenshot is the single visual reference. Keep one palette only. */
+:root{
+ --bg:#020d0a!important;--surface:#071611!important;--surface-2:#092019!important;
+ --green:#0c6a4c!important;--gold:#f0c66a!important;--text:#f6f1e8!important;
+ --muted:#c3cbc6!important;--border:rgba(236,241,237,.22)!important;
+}
+body{background:#020d0a!important;color:#f6f1e8!important}
+.green-text{color:#f0c66a!important}
+.navbar{background:#03110d!important;border-bottom:1px solid rgba(255,255,255,.08)!important}
+.logo-vv{color:#f6f1e8!important}
+.btn-primary,.nav-cta{background:#f0c66a!important;color:#0d1a14!important;border-color:#f0c66a!important}
+.hero{background:#020d0a!important}
+.hero-badge{color:#ddd7ca!important}
+.hero-headline{color:#f8f3e9!important}
+.hero-headline .green-text{color:#f0c66a!important}
+.hero-sub{color:#e2ded5!important}
+.stats-bar{background:#063b2c!important}
+.stat-number{color:#f7f2e8!important}
+.stat-label{color:#e4eee9!important}
+
+/* Exact feature strip from reference */
+.learning-strip{background:#020d0a;padding:30px 0 34px;border-bottom:1px solid rgba(255,255,255,.08)}
+.learning-strip-head{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:22px}
+.learning-strip-head h2{font-family:Georgia,"Times New Roman",serif;font-size:39px;line-height:1;color:#f7f2e8}
+.learning-strip-head h2 span{color:#f0c66a}
+.learning-strip-head p{margin-top:8px;color:#e0e3df;font-size:14px}
+.batch-pill{border:1px solid rgba(255,255,255,.55);border-radius:999px;padding:11px 18px;color:#f4f1e9;font-size:13px;white-space:nowrap}
+.learning-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:5px}
+.learning-card{min-height:142px;border:1px solid rgba(230,238,233,.25);border-radius:6px;background:linear-gradient(180deg,#0b1b16,#07130f);padding:18px 12px;text-align:center}
+.learning-icon{height:30px;color:#31ba82;font-size:25px;margin-bottom:8px}
+.learning-card:nth-child(2) .learning-icon,.learning-card:nth-child(7) .learning-icon{color:#ee7d42}
+.learning-card:nth-child(3) .learning-icon,.learning-card:nth-child(6) .learning-icon{color:#5e9ce8}
+.learning-card:nth-child(4) .learning-icon{color:#b77de6}
+.learning-card:nth-child(5) .learning-icon{color:#9db7d7}
+.learning-card h3{font-family:Georgia,"Times New Roman",serif;font-size:14px;color:#f7f2e8;margin-bottom:7px}
+.learning-card p{font-size:11px;line-height:1.45;color:#d4d9d6}
+
+/* Reference Why panel */
+.why-section{background:#f2eee5!important}
+.why-section .section-title{color:#101c16!important}
+.why-section .section-title .green-text{color:#0a5a40!important}
+.why-section .section-sub{color:#26372f!important}
+.why-section .features-grid{grid-template-columns:1fr 1fr!important;gap:2px 30px!important}
+.why-section .feature-card{display:grid!important;grid-template-columns:20px 1fr!important;align-items:center!important;gap:8px!important;padding:7px 0!important;min-height:0!important;background:transparent!important;border:0!important}
+.why-section .feature-icon{width:17px;height:17px;border-radius:50%;display:grid;place-items:center;background:#0a4937!important;color:white!important;font-size:11px!important;margin:0!important}
+.why-section .feature-card h3{font-family:var(--font-body)!important;font-size:13px!important;font-weight:600!important;color:#17231d!important;margin:0!important}
+
+/* Keep later sections in the SAME palette, no mixed blue/neon theme */
+.courses-section,.faculty-section,.testimonials-section,.community-section,.contact-section{background:#020d0a!important}
+.course-card,.faculty-card,.testimonial-card,.community-card,.enquiry-form-card{background:#081813!important;border-color:rgba(236,241,237,.18)!important}
+.badge-blue,.tag.blue,.meta-item,.faculty-teaches span{color:#b9d2c7!important;background:rgba(80,130,105,.10)!important;border-color:rgba(185,210,199,.18)!important}
+.course-price-highlight,.faculty-title,.student-name,.info-link{color:#f0c66a!important}
+.about-section{background:#f2eee5!important}
+.cta-card .green-text{color:#f0c66a!important}
+.footer{background:#010806!important}
+
+@media(max-width:1050px){.learning-grid{grid-template-columns:repeat(4,1fr)}}
+@media(max-width:700px){
+ .learning-strip-head{align-items:flex-start;flex-direction:column}
+ .learning-grid{grid-template-columns:repeat(2,1fr)}
+ .learning-card{min-height:130px}
+}
