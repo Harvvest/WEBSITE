@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Life | HARVVEST Stock Market Institution</title>
+  <meta name="description" content="Explore student video reviews and campus life at HARVVEST Stock Market Institution in Adajan, Surat. Genuine learner perspectives and practical classroom experiences." />
+  <meta property="og:title" content="Student Life | HARVVEST Stock Market Institution" />
+  <meta property="og:description" content="Student video reviews and experiences at HARVVEST Stock Market Institution. Adajan, Surat." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,600&family=JetBrains+Mono:wght@400;500;600&family=Manrope:wght@400;500;600;700&family=Sora:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body style="background-color: #070C16; color: #B8C0CC; overflow-x: hidden;">
+
+  <!-- HEADER / NAVIGATION -->
+  <header class="ref-navbar" id="navbar">
+    <div class="container" style="display: flex; align-items: center; justify-content: space-between;">
+      <a href="index.html" class="ref-logo" aria-label="HARVVEST Stock Market Institution Home">
+        <span class="ref-logo-title">HARVVEST</span>
+        <span class="ref-logo-sub">STOCK MARKET INSTITUTION</span>
+      </a>
+
+      <nav class="ref-nav-links">
+        <a href="index.html" class="ref-nav-link">Home</a>
+        <a href="programs.html" class="ref-nav-link">Programs</a>
+        <a href="student-life.html" class="ref-nav-link active">Student Life</a>
+        <a href="about.html" class="ref-nav-link">About</a>
+        <a href="contact.html" class="ref-nav-link">Contact</a>
+      </nav>
+
+      <div style="display: flex; align-items: center; gap: 14px;">
+        <button type="button" class="ref-btn-gold" data-open-modal data-program="General Inquiry">
+          Book a Session →
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-drawer" id="mobileDrawer">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="programs.html" class="nav-link">Programs</a>
+      <a href="student-life.html" class="nav-link active">Student Life</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+      <button type="button" class="ref-btn-gold btn-block" style="margin-top: 18px;" data-open-modal data-program="General Inquiry">
+        Book a Session →
+      </button>
+    </div>
+    <div class="drawer-overlay" id="drawerOverlay"></div>
+  </header>
+
+  <main>
+
+    <!-- PAGE HERO -->
+    <section class="section" style="padding-top: 60px; padding-bottom: 30px;">
+      <div class="container">
+        <div style="max-width: 840px;">
+          <div class="ref-program-eyebrow" style="margin-bottom: 12px;">CAMPUS COMMUNITY &amp; LEARNER JOURNEYS</div>
+          <h1 style="font-family: 'Cormorant Garamond', Georgia, serif; font-size: clamp(2.4rem, 4.5vw, 3.5rem); color: #F5F2EB; font-weight: 700; line-height: 1.15; margin-bottom: 16px;">
+            Student Life at HARVVEST
+          </h1>
+          <p style="font-size: 1.05rem; line-height: 1.65; color: #A4B1C4; margin-bottom: 0;">
+            A collaborative learning environment fostering market discipline, structured analytical habits, and shared growth in Surat and live online sessions.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: STUDENT VIDEO REVIEWS (FULL COLLECTION) -->
+    <!-- Managed by student-reviews-data.js. Kept cleanly hidden until real student review videos are provided. -->
+    <section class="section student-reviews-section" id="studentReviewsStudentLife" style="display:none; padding-top: 20px; padding-bottom: 60px;">
+      <div class="container">
+        <div style="margin-bottom: 24px;">
+          <div class="ref-program-eyebrow">VERIFIED REVIEWS</div>
+          <h2 style="font-family: 'Cormorant Garamond', Georgia, serif; font-size: clamp(1.85rem, 3vw, 2.5rem); color: #F5F2EB; font-weight: 700; line-height: 1.2; margin: 4px 0 8px;">
+            Student Video Reviews
+          </h2>
+          <p style="font-size: 0.92rem; color: #8F9EB4; margin: 0; max-width: 680px;">
+            Watch real students share their genuine learning journey, key takeaways, and experience with HARVVEST mentors.
+          </p>
+        </div>
+
+        <div class="student-reviews-grid" id="studentReviewsStudentLifeGrid">
+          <!-- Dynamically populated from student-reviews-data.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- RESERVED SPACE: STUDENT PHOTO GALLERY -->
+    <!-- Kept cleanly hidden until student & classroom photos are implemented in the next step. -->
+    <section class="section gallery-placeholder-reserved" id="studentPhotoGallerySection" style="display:none; padding-top: 20px; padding-bottom: 70px;">
+      <div class="container">
+        <div style="margin-bottom: 24px;">
+          <div class="ref-program-eyebrow">PHOTO ARCHIVE</div>
+          <h2 style="font-family: 'Cormorant Garamond', Georgia, serif; font-size: clamp(1.85rem, 3vw, 2.5rem); color: #F5F2EB; font-weight: 700; line-height: 1.2; margin: 4px 0 8px;">
+            Student &amp; Classroom Gallery
+          </h2>
+          <p style="font-size: 0.92rem; color: #8F9EB4; margin: 0; max-width: 680px;">
+            Moments from our live trading desk, classroom discussions, and offline weekend workshops.
+          </p>
+        </div>
+        <div class="gallery-grid" id="studentPhotoGalleryGrid">
+          <!-- To be implemented in subsequent step -->
+        </div>
+      </div>
+    </section>
+
+    <!-- CLOSING BANNER -->
+    <section class="section" style="padding-top: 10px; padding-bottom: 75px;">
+      <div class="container">
+        <div class="ref-closing-card entrance-fade">
+          <div class="ref-closing-bg-art">
+            <svg viewBox="0 0 1200 240" width="100%" height="100%" preserveAspectRatio="xMidYMid slice">
+              <defs>
+                <radialGradient id="bannerSunSL" cx="62%" cy="40%" r="50%">
+                  <stop offset="0%" stop-color="#FFF2B8" stop-opacity="0.9"/>
+                  <stop offset="30%" stop-color="#DFBF7A" stop-opacity="0.5"/>
+                  <stop offset="70%" stop-color="#0E182A" stop-opacity="0.1"/>
+                  <stop offset="100%" stop-color="#0E182A" stop-opacity="0"/>
+                </radialGradient>
+              </defs>
+              <rect width="100%" height="100%" fill="#0E182A"/>
+              <circle cx="740" cy="95" r="160" fill="url(#bannerSunSL)"/>
+              <circle cx="740" cy="95" r="24" fill="#FFFCE8"/>
+              <path d="M0,240 L200,150 L380,200 L540,130 L740,95 L920,160 L1100,120 L1200,150 L1200,240 Z" fill="#132035"/>
+              <path d="M400,240 C520,230 640,210 680,175 C710,150 720,125 740,95" fill="none" stroke="#C9A45C" stroke-width="10" stroke-opacity="0.4"/>
+              <path d="M400,240 C520,230 640,210 680,175 C710,150 720,125 740,95" fill="none" stroke="#FFF0B8" stroke-width="3"/>
+            </svg>
+          </div>
+          <div class="ref-closing-content">
+            <h2 class="ref-closing-title">Experience it firsthand.</h2>
+            <p class="ref-closing-desc">Sit in on real classroom sessions and see how our mentors guide market decisions.</p>
+          </div>
+          <div>
+            <button type="button" class="ref-btn-gold" style="font-size: 0.95rem; padding: 14px 28px;" data-open-modal data-program="First 3 Classes Are Free">
+              Book a Free Session →
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="ref-footer">
+    <div class="container">
+      <div class="ref-footer-row">
+        <a href="index.html" class="ref-logo" aria-label="HARVVEST Home">
+          <span class="ref-logo-title" style="font-size: 1.15rem;">HARVVEST</span>
+          <span class="ref-logo-sub" style="font-size: 0.48rem;">STOCK MARKET INSTITUTION</span>
+        </a>
+
+        <nav style="display: flex; align-items: center; gap: 32px; flex-wrap: wrap;">
+          <a href="index.html" class="ref-nav-link">Home</a>
+          <a href="programs.html" class="ref-nav-link">Programs</a>
+          <a href="student-life.html" class="ref-nav-link active">Student Life</a>
+          <a href="about.html" class="ref-nav-link">About</a>
+          <a href="contact.html" class="ref-nav-link">Contact</a>
+        </nav>
+
+        <div class="ref-footer-tagline">
+          <span class="ref-footer-tagline-motto">Learn &nbsp;|&nbsp; Practise &nbsp;|&nbsp; Grow</span>
+          <span>A more informed generation of traders.</span>
+        </div>
+      </div>
+
+      <div style="margin-top: 36px; padding-top: 20px; border-top: 1px solid rgba(201, 164, 92, 0.1); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; font-size: 0.78rem; color: #6E7C90;">
+        <div>© 2026 HARVVEST Stock Market Institution. Adajan, Surat — 395009, Gujarat.</div>
+        <div>Offline Classroom &amp; Live Online Interactive Batches • Phone / WhatsApp: +91 99982 88268</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- UNIVERSAL BOOKING ENQUIRY MODAL (PRESERVED & FULLY FUNCTIONAL) -->
+  <div class="modal-overlay" id="enquiryModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-container">
+      <button class="modal-close" id="modalCloseBtn" aria-label="Close booking modal">✕</button>
+
+      <div class="modal-header">
+        <h3 class="modal-title" id="modalTitle">Book a Session</h3>
+        <p class="modal-subtitle">Reserve your place for the upcoming batch or schedule a 1-on-1 counselling session. First 3 classes are completely free.</p>
+      </div>
+
+      <!-- Form View -->
+      <form id="modalEnquiryForm">
+        <div class="form-group">
+          <label class="form-label" for="modalName">Full Name *</label>
+          <input type="text" id="modalName" name="name" class="form-input" placeholder="e.g. Rahul Sharma" required />
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="modalPhone">Mobile Number (WhatsApp) *</label>
+          <input type="tel" id="modalPhone" name="phone" class="form-input" placeholder="+91 98765 43210" required />
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="modalProgram">Interested Program</label>
+          <select id="modalProgram" name="program" class="form-select">
+            <option value="General Inquiry">General Inquiry / Need Guidance</option>
+            <option value="First 3 Classes Are Free">First 3 Classes Are Free (Trial)</option>
+            <option value="Free Career Counselling">Free Career Counselling (1-on-1)</option>
+            <option value="HARVVEST Trading Program — 3 Months">HARVVEST Trading Program — 3 Months</option>
+            <option value="Advanced Mastery Program — 6 Months">Advanced Mastery Program — 6 Months</option>
+          </select>
+        </div>
+
+        <input type="hidden" id="modalBatchId" name="batchId" value="" />
+        <input type="hidden" id="modalBatchDetails" name="batchDetails" value="" />
+
+        <div class="form-group">
+          <label class="form-label">Preferred Learning Mode</label>
+          <div class="radio-group">
+            <label class="radio-card">
+              <input type="radio" name="mode" value="Offline (Adajan Campus, Surat)" checked />
+              <span>Offline (Surat)</span>
+            </label>
+            <label class="radio-card">
+              <input type="radio" name="mode" value="Online (Interactive Live Batches)" />
+              <span>Live Online</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="modalMessage">Your Goals or Questions (Optional)</label>
+          <textarea id="modalMessage" name="message" class="form-textarea" placeholder="Tell us about your current trading experience or questions..."></textarea>
+        </div>
+
+        <div class="form-error-notice" style="display:none;"></div>
+
+        <button type="submit" class="btn btn-primary btn-block" style="margin-top: 10px;">
+          Confirm &amp; Book Session →
+        </button>
+
+        <p class="form-privacy-note">
+          Your information is kept strictly confidential. No spam or promotional calls.
+        </p>
+      </form>
+
+      <!-- Feedback View -->
+      <div class="modal-feedback" id="modalFeedback">
+        <div class="feedback-icon-wrap">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+        </div>
+        <h4 class="feedback-title">Session Booked Successfully!</h4>
+        <p class="feedback-desc">
+          Thank you, <strong class="feedback-user-name">Trader</strong>. Your booking details have been stored. A member of our academic team will contact you shortly to confirm your batch timing and classroom access.
+        </p>
+        <div class="feedback-actions">
+          <a href="https://wa.me/919998288268?text=Hello%20HARVVEST%2C%20I%20just%20submitted%20my%20session%20booking%20and%20would%20like%20instant%20confirmation." 
+             target="_blank" rel="noopener" class="btn btn-primary btn-block">
+            Get Instant Confirmation on WhatsApp →
+          </a>
+          <button type="button" class="btn btn-outline btn-block" onclick="document.getElementById('modalCloseBtn').click();">
+            Close Window
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SHARED VIDEO PLAYBACK MODAL -->
+  <div class="video-modal-overlay" id="videoModalOverlay" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="videoModalTitle">
+    <div class="video-modal-dialog">
+      <div class="video-modal-header">
+        <h3 class="video-modal-title" id="videoModalTitle">Video Review</h3>
+        <button type="button" class="video-modal-close" id="videoModalCloseBtn" aria-label="Close video">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <div class="video-player-container" id="videoPlayerContainer">
+        <!-- Video element or embed injected dynamically on open -->
+      </div>
+    </div>
+  </div>
+
+  <!-- FLOATING WHATSAPP BUTTON -->
+  <a href="https://wa.me/919998288268?text=Hello%20HARVVEST%2C%20I%20would%20like%20to%20know%20more%20about%20your%20trading%20programs%20and%20book%20my%20first%20free%20session." 
+     target="_blank" rel="noopener" class="whatsapp-float" aria-label="Chat directly with HARVVEST on WhatsApp">
+    <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <script src="batches-data.js"></script>
+  <script src="demo-videos-data.js"></script>
+  <script src="student-reviews-data.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

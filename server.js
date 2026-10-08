@@ -1,0 +1,22 @@
+import express from 'express';
+import path from 'node:path';
+import {fileURLToPath} from 'node:url';
+import {dispatchEnquiry} from './lib/enquiry.js';
+const root = path.dirname(fileURLToPath(import.meta.url));
+const app = express();
+app.disable('x-powered-by');
+app.use(express.json({limit:'8kb'}));
+app.post('/api/enquiry', async (req,res) => {
+  res.set('Cache-Control','no-store');
+  if (!req.is('application/json')) return res.status(415).json({stored:false,error:'JSON required'});
+  const result = await dispatchEnquiry(req.body);
+  res.status(result.status).json(result.data);
+});
+app.all('/api/enquiry', (req,res) => res.status(405).set('Allow','POST').json({stored:false,error:'Method not allowed'}));
+for (const page of ['programs','about','contact']) app.get('/'+page, (req,res) => res.sendFile(path.join(root,page+'.html')));
+app.use('/assets',express.static(path.join(root,'assets')));
+for (const file of ['index.html','programs.html','about.html','contact.html','styles.css','main.js']) app.get('/'+file,(req,res)=>res.sendFile(path.join(root,file)));
+app.get('/',(req,res)=>res.sendFile(path.join(root,'index.html')));
+app.use((req,res)=>res.status(404).send('Page not found.'));
+app.use((err,req,res,next)=>res.status(400).json({stored:false,error:'Invalid request'}));
+app.listen(process.env.PORT || 3000,'0.0.0.0',()=>console.log('HARVVEST preview ready'));
